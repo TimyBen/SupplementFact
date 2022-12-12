@@ -59,7 +59,7 @@ namespace SupplementFact
             this.productsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(712, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(464, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -99,7 +99,7 @@ namespace SupplementFact
             this.dataGridView1.Location = new System.Drawing.Point(12, 51);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(688, 387);
+            this.dataGridView1.Size = new System.Drawing.Size(440, 297);
             this.dataGridView1.TabIndex = 1;
             // 
             // pRODUCTIDDataGridViewTextBoxColumn
@@ -158,7 +158,7 @@ namespace SupplementFact
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(712, 450);
+            this.ClientSize = new System.Drawing.Size(464, 360);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
