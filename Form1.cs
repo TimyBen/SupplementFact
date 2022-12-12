@@ -16,7 +16,6 @@ namespace SupplementFact
         public Form1()
         {
             InitializeComponent();
-            InitializeComponent();
             this.ActiveControl = txt_email;
             txt_email.Focus();
         }
@@ -44,11 +43,11 @@ namespace SupplementFact
 
             string user_id = txt_email.Text;
             string password = txt_Password.Text;
-            string sql = "Select ACCT_ID, PASSWORD FROM tblUsers WHERE UserID='" + txt_email.Text + "' AND Password='" + txt_Password.Text + "'";
+            string sql = "Select EMAIL, PASSWORD FROM Accountant WHERE EMAIL='" + txt_email.Text + "' AND PASSWORD='" + txt_Password.Text + "'";
             SqlCommand cmd = new SqlCommand(sql, cnn);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            SqlDataAdapter data = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
-            da.Fill(dt);
+            data.Fill(dt);
             if (dt.Rows.Count > 0)
             {
                 MessageBox.Show("Login Successful !");
@@ -63,6 +62,20 @@ namespace SupplementFact
             }
             //MessageBox.Show("Conncetion Open !");
             cnn.Close();
+            
         }
+
+        private void txt_Password_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                button1.PerformClick();
+        }
+
+        private void txt_email_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                txt_Password.Focus();
+        }
+
     }
 }
