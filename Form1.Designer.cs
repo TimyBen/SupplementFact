@@ -57,9 +57,9 @@ namespace SupplementFact
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(5, 409);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(249, 23);
+            this.label1.Size = new System.Drawing.Size(383, 23);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Final Project For: 519K0078";
+            this.label1.Text = "Final Project For: 519K0078 And 520K0328";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txt_email
